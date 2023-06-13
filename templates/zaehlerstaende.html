@@ -7,8 +7,8 @@
     <h1>Zaehlerstaende</h1>
     <p>{{ test }}</p>
     <ul>
-        {% for value in values %}
-            <li>{{ value }}</li>
+        {% for time_period, sum_value in values.items() %}
+            <li>Time period: {{ time_period }}, Sum value: {{ sum_value }}</li>
         {% endfor %}
     </ul>
 </body>
