@@ -61,4 +61,4 @@ def process_xml_files(directory):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='localhost', debug=True)
